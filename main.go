@@ -16,7 +16,7 @@ func main() {
 
 	var wg sync.WaitGroup
 
-	const IDs = 20
+	const IDs = 10
 
 	wg.Add(1)
 	for i := 0; i < 1; i++ {
@@ -33,5 +33,5 @@ func main() {
 	}
 	wg.Wait()
 
-	fmt.Println("Generated IDs:", IDs)
+	fmt.Println("IDs Generated")
 }
